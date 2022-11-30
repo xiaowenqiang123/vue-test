@@ -7,19 +7,9 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Canvas: typeof import('./src/components/canvas/index.vue')['default']
-    ElAvatar: typeof import('element-plus/es')['ElAvatar']
-    ElCollapse: typeof import('element-plus/es')['ElCollapse']
-    ElCollapseItem: typeof import('element-plus/es')['ElCollapseItem']
     Elements: typeof import('./src/components/elements/index.vue')['default']
-    ElForm: typeof import('element-plus/es')['ElForm']
-    ElFormItem: typeof import('element-plus/es')['ElFormItem']
-    ElInput: typeof import('element-plus/es')['ElInput']
-    ElTabPane: typeof import('element-plus/es')['ElTabPane']
-    ElTabs: typeof import('element-plus/es')['ElTabs']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Tab: typeof import('./src/components/elements/tab.vue')['default']
-    Tabs: typeof import('./src/components/elements/tabs.vue')['default']
   }
 }
